@@ -1,0 +1,87 @@
+#about {
+  &-a {
+    .info {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 1.2rem;
+      text-align: center;
+
+      &__image {
+        padding: 8px;
+        border: 1px solid $border-color;
+        border-radius: 3px;
+      }
+      &-bio {
+        padding: 0.8rem;
+        border: 1px solid $border-color;
+      }
+    }
+  }
+
+  &-b {
+    color: #fff;
+
+    #progress-bars {
+      text-align: start;
+      font-size: 0.8rem;
+
+      h4 {
+        padding-bottom: 0.2rem;
+      }
+      .progress {
+        height: 1rem;
+        background-color: #dee0ea;
+        border-radius: 0.3rem;
+        margin-bottom: 0.9rem;
+
+        div {
+          height: 100%;
+          background-color: $primary-color;
+          border-radius: 0.3rem;
+        }
+      }
+    }
+  }
+
+  &-c {
+    .about-logos {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+
+      img {
+        width: 70%;
+      }
+    }
+  }
+  &-d {
+    .references {
+      position: relative;
+      ul {
+        display: flex;
+        align-items: center;
+      }
+      p {
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+        border: 1px solid $border-color;
+      }
+
+      img {
+        height: 3.5rem;
+        border-radius: 50%;
+        padding-right: 8px;
+      }
+
+      .owl-nav {
+        position: absolute;
+        top: 20%;
+        display: flex;
+        justify-content: space-between;
+        width: 105%;
+        font-size: 5rem;
+        left: -30px;
+      }
+    }
+  }
+}
