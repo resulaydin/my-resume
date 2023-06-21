@@ -1,0 +1,245 @@
+@media (max-width: 376px) {
+  // container
+  .container {
+    max-width: 300px;
+  }
+}
+@media (max-width: 576px) {
+  // container
+  .container {
+    max-width: 376px;
+  }
+
+  //   header-main-nav
+  #header {
+    &__home {
+      .main-nav {
+        padding-top: 0.5rem;
+        &__logo {
+          width: 25px;
+          height: 25px;
+        }
+
+        li {
+          padding: 0.5rem 0.5rem;
+        }
+      }
+    }
+  }
+
+  .main-content-wrapper {
+    height: 60vh;
+    .main-content {
+      padding-top: 3%;
+
+      h1 {
+        font-size: 2rem !important;
+      }
+
+      .btn-light {
+        padding: 0.1rem 0.4rem;
+      }
+    }
+
+    .typewrite {
+      display: block;
+      padding: 1rem 0;
+    }
+  }
+
+  //   home-section
+
+  #home__a,
+  #home__b,
+  #home__c {
+    padding: 0.5rem 0 !important;
+  }
+  #home__a .skills,
+  #home__b .profile,
+  #home__c .process {
+    grid-template-columns: repeat(1, 1fr) !important;
+
+    div {
+      font-size: 0.7rem;
+
+      i {
+        font-size: 2rem;
+      }
+    }
+    .lead {
+      font-size: 0.8rem;
+    }
+  }
+
+  #home__a .section-title,
+  #home__b .section-title,
+  #home__c .section-title {
+    font-size: 1.1rem;
+    line-height: 1;
+    padding: 0.5rem 0 !important;
+    margin: 1rem 0 !important;
+  }
+
+  // about
+
+  #about {
+    &-c {
+      background-color: #fff;
+      border-bottom: 1px solid black;
+      max-width: 376px;
+      margin: auto;
+
+      .about-logos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+
+        img {
+          width: 70%;
+          box-shadow: 20px 20px 50px black;
+          margin: auto;
+        }
+      }
+    }
+  }
+
+  .items {
+    grid-template-columns: 1fr !important;
+    gap: 1rem;
+  }
+
+  #contact {
+    &-a {
+      .form-fields {
+        display: grid;
+        grid-template-areas:
+          "name"
+          "email"
+          "subject "
+          "phone"
+          "message"
+          "button";
+        row-gap: 1.5rem;
+        width: 98%;
+
+        .input {
+          padding: 0.6rem;
+        }
+      }
+    }
+  }
+  //   footer
+  #main-footer {
+    .footer-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      row-gap: 0.5rem;
+      padding: 0.5rem;
+      .social .fab {
+        margin-right: 0.5rem;
+        padding: 0.5rem;
+        font-size: 0.5rem;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 576px;
+  }
+
+  #header {
+    &__home {
+      .main-nav {
+        padding-top: 1rem;
+        &__logo {
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
+  }
+
+  .main-content-wrapper {
+    height: 60vh;
+    .main-content {
+      padding-top: 42% !important;
+
+      h1 {
+        font-size: 1.2rem !important;
+      }
+
+      .btn-light {
+        padding: 0.2rem 0.7rem;
+      }
+    }
+
+    .typewrite {
+      display: block;
+      margin-bottom: 0.3rem;
+    }
+  }
+
+  #home__a .skills,
+  #home__b .profile,
+  #home__c .process,
+  .items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.7rem;
+
+    div {
+      font-size: 1rem;
+
+      i {
+        font-size: 4rem;
+      }
+    }
+    .lead {
+      font-size: 1rem;
+    }
+  }
+
+  #home__a .section-title,
+  #home__b .section-title,
+  #home__c .section-title {
+    font-size: 1.5rem;
+    line-height: 1;
+    margin: 2rem 0;
+  }
+
+  #about {
+    &-a {
+      .info {
+        grid-template-columns: 1fr !important;
+        gap: 1rem;
+      }
+    }
+    &-c {
+      background-color: #fff;
+      .about-logos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+
+        img {
+          width: 70%;
+          box-shadow: 20px 20px 50px black;
+          margin: auto;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .main-content-wrapper {
+    .main-content {
+      padding-top: 40%;
+      h1 {
+        font-size: 2.5rem;
+      }
+    }
+  }
+}

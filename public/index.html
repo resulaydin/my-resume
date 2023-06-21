@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/public/css/main.css" />
+    <link rel="stylesheet" href="css/main.css" />
     <!-- Google Font -->
     <link
       href="https://fonts.googleapis.com/css2?family=Prompt&display=swap"
@@ -19,28 +19,30 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <title>Document</title>
+    <title>Main Page</title>
   </head>
   <body>
     <!-- header -->
     <header id="header__home">
       <div class="container">
-        <div class="wrapper">
-          <nav class="main-nav">
-            <img
-              src="/public/img/logo.png"
-              alt="company logo"
-              class="main-nav__logo"
-            />
-            <ul class="main-nav__items">
-              <li><a href="./index.html" class="active">Home</a></li>
-              <li><a href="./about.html">About</a></li>
-              <li><a href="./projects.html">Projects</a></li>
-              <li><a href="./contact.html">Contact</a></li>
-            </ul>
-          </nav>
+        <nav class="main-nav">
+          <a href="index.html">
+            <img src="img/logo.png" alt="company logo" class="main-nav__logo" />
+          </a>
+          <ul class="main-nav__items">
+            <li><a href="./index.html" class="active">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-          <div class="header-content">
+    <section id="main">
+      <div class="main-content-wrapper">
+        <div class="container">
+          <div class="main-content">
             <h1 class="animate_animated animate__tada">
               I' m resul aydın
               <span
@@ -49,18 +51,21 @@
                 data-type='["Developer","Designer","Freelancer"]'
               ></span>
             </h1>
-            <a href="#" class="btn-light animate__animated animate__swing my-2">
+            <a
+              href="about.html"
+              class="btn-light animate__animated animate__swing"
+            >
               View My Profile
             </a>
           </div>
         </div>
       </div>
-    </header>
+    </section>
 
     <!-- section a -->
     <section id="home__a" class="text-center py-2">
       <div class="container">
-        <h2 class="section-title">Introduction</h2>
+        <h1 class="section-title">Introduction</h1>
         <div class="border-bottom"></div>
         <p class="lead">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ea,

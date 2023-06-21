@@ -7,7 +7,7 @@ $(".owl-carousel").owlCarousel({
   dots: true,
   dotsEach: true,
   responsive: {
-    576: {
+    0: {
       items: 1,
     },
     768: {

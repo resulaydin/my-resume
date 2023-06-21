@@ -30,6 +30,16 @@
     background-color: $dark-color;
   }
 }
+.btn {
+  &-sm {
+    @extend %btn-shared;
+    padding: 0.4rem 1rem;
+  }
+  &-lg {
+    @extend %btn-shared;
+    padding: 0.6rem 1.5rem;
+  }
+}
 
 button[class^="btn-"]:hover,
 a[class^="btn-"]:hover,
